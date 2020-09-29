@@ -15,7 +15,5 @@ public class Variable {
 		
 		System.out.println(myVar);
 		
-		int myVar2 = 5;
-		
 	}
 }
