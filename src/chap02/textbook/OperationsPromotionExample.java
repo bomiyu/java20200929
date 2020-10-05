@@ -4,7 +4,7 @@ public class OperationsPromotionExample {
 	public static void main(String[] args) {
 		byte byteValue1 = 10;
 		byte byteValue2 = 20;
-//		byte byteValue3 = byteValue1 + byteVlaue2;//컴파일에러
+//		byte byteValue3 = byteValue1 + byteVlaue2;  //컴파일에러
 		int intValue1 = byteValue1 + byteValue2;
 		System.out.println(intValue1);
 		
@@ -16,7 +16,7 @@ public class OperationsPromotionExample {
 		System.out.println("출력문자=" + (char)intValue2);
 		
 		int intValue3 = 10;
-		int intValue4 = intValue3/4;
+		int intValue4 = intValue3/4; //10나누기 4는 2.얼마~ 2만결과로나옴 
 		System.out.println(intValue4);
 		
 		int intValue5 = 10;
