@@ -30,7 +30,7 @@ public class ByteType {
 		byteValue = 127;
 		System.out.println(byteValue);
 		
-//		byteValue = 128; /컴파일오류
+//		byteValue = 128; //컴파일오류
 
 		byteValue++;
 		System.out.println(byteValue); //결과는 -128 최대양수는 127이기때문~!
