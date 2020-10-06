@@ -3,7 +3,7 @@ package chap03.binary;
 public class CompareOperator {
 	public static void main(String[] args) {
 //		비교 연산자
-//		== !== < <== > >==
+//		== != < <= > >=
 //		결과 boolean
 		
 		int a = 3;
