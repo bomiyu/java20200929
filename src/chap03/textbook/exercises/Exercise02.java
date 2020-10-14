@@ -7,5 +7,7 @@ public class Exercise02 {
 		
 		int z = (++x) + (y--);
 		System.out.println(z);
+
+
 	}
 }
