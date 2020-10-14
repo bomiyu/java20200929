@@ -53,7 +53,7 @@ public class BankApplication {
 		System.out.print("출금액:");
 		money = scanner.nextInt();
 		
-		Account cur = findAccount(ano);
+		Account cur = findAccount(ano);//계좌번호로 찾아서 Account에 할당 
 		int sum = cur.getBalance() - money;
 		cur.setBalance(sum);		
 		
