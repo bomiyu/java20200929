@@ -6,7 +6,7 @@ public class FloatDoubleExample {
 //		float var2 = 3.14;
 		float var3 = 3.14F;
 		
-		double var4 = 0.1234567890123456789; //좁은범위의 수를 덜 촘촘하게 하기때문에 
+		double var4 = 0.1234567890123456789;
 		float var5 = 0.1234567890123456789F;
 		
 		System.out.println("var1: " + var1);
