@@ -11,6 +11,7 @@ public class ValueCompareExample {
 		System.out.println();
 
 		System.out.println("[-128~127 범위값일 경우]");
+		
 		Integer obj3 = 10;
 		Integer obj4 = 10;
 		System.out.println("==결과: " + (obj3 == obj4));
