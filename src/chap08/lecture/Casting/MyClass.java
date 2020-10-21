@@ -1,0 +1,16 @@
+package chap08.lecture.Casting;
+
+public class MyClass implements MyInterface {
+	@Override
+	public void method1() {
+		// TODO Auto-generated method stub
+		System.out.println("myclass method1");
+	}
+
+	public void method2() {
+		// TODO Auto-generated method stub
+		System.out.println("myclass method2");
+	}
+}
+
+
