@@ -5,7 +5,9 @@ public class Car {
 	int gas;
 	
 	//생성자
-	
+	Car() {
+
+	}
 	//메소드
 	
 	void setGas(int gas) {
