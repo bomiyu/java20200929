@@ -14,7 +14,7 @@ public class LinkedListExample {
 		
 		startTime = System.nanoTime();
 		for(int i = 0; i<10000; i++) {
-			list1.add(0,String.valueOf(i));
+			list1.add(0,String.valueOf(i));// 0번인덱스에 인덱스가 i번째까지 for문 실행하면서 add 
 		}
 		
 		endTime = System.nanoTime();
