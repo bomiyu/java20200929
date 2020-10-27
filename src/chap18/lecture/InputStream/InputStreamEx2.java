@@ -1,4 +1,4 @@
-package chap18.lecture.inputstream;
+package chap18.lecture.InputStream;
 
 import java.io.FileInputStream; //사용하는 스트림 입력 꼭 
 import java.io.InputStream;

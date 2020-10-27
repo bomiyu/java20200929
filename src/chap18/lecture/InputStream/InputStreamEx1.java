@@ -1,4 +1,4 @@
-package chap18.lecture.inputstream;
+package chap18.lecture.InputStream;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
