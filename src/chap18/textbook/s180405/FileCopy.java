@@ -1,9 +1,16 @@
-package chap18.textbook.s180404;
+package chap18.textbook.s180405;
 
+import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 
-public class FileReaderExample {
+public class FileCopy {
 	public static void main(String[] args) throws Exception {
+		String src = "src/chap18/textbook/s180405/FileCopy.java";
+		String des = "file-copy.txt";
+		
+		//Reader, Writer사용해서 파일 복사 
+		
 		FileReader fr 
 		= new FileReader("src/chap18/textbook/s180404/fileReaderExample.java");
 		
@@ -15,5 +22,14 @@ public class FileReaderExample {
 		}
 		
 		fr.close();
+		
+		File file = new File("src/chap18/textbook/s180405/FileCopy.java");
+
+		
+		FileWriter fw = new FileWriter(file, true);
+
+		fw.flush();
+		fw.close();
+		System.out.println("파일에 저장되었습니다.");
 	}
 }

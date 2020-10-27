@@ -14,10 +14,10 @@ public class FileOutputStreamExample {
 		int readByteNo;
 		byte[] readBytes = new byte[100];
 		
-		while ((readByteNo = fis.read(readBytes))!= -1) {
-			fos.write(readBytes, 0, readByteNo);
+		while ((readByteNo = fis.read(readBytes))!= -1) { //100을리턴 
+			fos.write(readBytes, 0, readByteNo); //0번부터 100개 를 읽어내고 씀 
 		}
-		fos.flush();
+		fos.flush(); //채워넣은것을 다써라
 		fis.close();
 		fos.close();
 		
