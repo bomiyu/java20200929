@@ -1,0 +1,5 @@
+package chap12.lecture.returnKeyword;
+
+public interface MyInterface {
+	int method(int a);
+}

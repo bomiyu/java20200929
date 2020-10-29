@@ -26,7 +26,7 @@ public class WarmUp2 {
 		}
 
 		for (int i = 0; i < n; i++) {
-			res += front;
+			res += front; //할당받은 front를 res로 저장하면서 n번찍음 
 		}
 
 		return res;
@@ -34,7 +34,7 @@ public class WarmUp2 {
 
 	
 	
-	//
+	//xx포함 갯수 리턴 
 	int countXX(String str) {
 		int cnt = 0;
 		int len = str.length();
@@ -42,10 +42,10 @@ public class WarmUp2 {
 		// String sub = str.substring(0, 2);
 		// str.substring(len-2, len);
 
-		for (int i = 0; i <= len - 2; i++) { //
-			String sub = str.substring(i, i + 2);
+		for (int i = 0; i <= len - 2; i++) {  //만약에 5개의 길이len 가진 3까지 반복  
+			String sub = str.substring(i, i + 2); // i가 3을 받아오면 (3, 5)가 됨  즉,len까지 할당가능~!!
 			if (sub.equals("xx")) {
-				cnt++;
+				cnt++;//xx를 찾아서 카운트 
 			}
 		}
 
@@ -58,7 +58,7 @@ public class WarmUp2 {
 		int xinx = str.indexOf("x");
 		int xxinx = str.indexOf("xx");
 
-		if (xinx == -1) {
+		if (xinx == -1) { //
 			return false;
 		}
 
@@ -78,5 +78,32 @@ public class WarmUp2 {
 
 		return res;
 	}
+	
+	public String stringSplosion(String str) {
+		String res = "";
+
+		for (int i = 1; i <= str.length(); i++) {
+			res += str.substring(0, i);
+		}
+
+		return res;
+	}
+
+	public int last2(String str) {
+		int len = str.length();
+		if (len >= 2) {
+			int cnt = 0;
+			String last2 = str.substring(len - 2, len);
+			for (int i = 0; i < len - 1; i++) {
+				String sub = str.substring(i, i + 2);
+				if (sub.equals(last2)) {
+					cnt++;
+				}
+			}
+			return cnt - 1;
+		}
+		return 0;
+	}
+
 	
 }
