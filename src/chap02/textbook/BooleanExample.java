@@ -8,6 +8,6 @@ public class BooleanExample {
 			
 		} else {
 			System.out.println("시작합니다.");
-		}
+		}//ddsfd1515151515
 	}
 }
